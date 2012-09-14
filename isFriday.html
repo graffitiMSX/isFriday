@@ -10,17 +10,17 @@
 	
 	var now = new Date(), weekday = [], day;
 
-	weekday[0] = weekday[1] = weekday[2] = weekday[3] = 'whatever';
-	weekday[4] = 'Thursday';
-	weekday[5] = 'Friday'; weekday[6] = 'Saturday';
+	weekday[0] = weekday[1] = weekday[2] = weekday[3] = 'Qualquer dia';
+	weekday[4] = 'Quinta';
+	weekday[5] = 'Sexta'; weekday[6] = 'Sábado';
 
 	var waitForFriday = function() {
 		day = now.getDay();
-		if(weekday[day]!=='Friday') {
-			if(weekday[day]==='Saturday') {
+		if(weekday[day]!=='Sexta') {
+			if(weekday[day]==='Sábado') {
 				console.log('Sexta foi ontem!');
 			} else {
-				console.log('Falta(m) ' + ( 5 - day ) + ' dia(a) para sexta!');
+				console.log('Falta(m) ' + ( 5 - day ) + ' dia(s) para sexta!');
 			}
 		} else {
 			console.log('Fique calmo que hoje já é sexta!!!');
