@@ -22,6 +22,10 @@ if( date('D')==='Fri' ){
 			$text .= 'terminar aquele sistema';
 			break;
 
+		case 'extra':
+			$text .= 'fazer hora extra';
+			break;
+
 		case 'git':
 			$text .= 'enviar o último pull request da semana';
 			break;
