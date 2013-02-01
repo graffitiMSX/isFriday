@@ -8,13 +8,9 @@ public class Carneirinho{
     String a = " carneirinho",
       b = " pulando a cerca.",
       c = "s";
-    
-    for(i=1; i<=100; i++){
-      if(i==1){
-        System.out.println( i + a + b );
-      } else {
-        System.out.println( i + a + c + b );
-      }
+    System.out.println( i + a + b );
+    for(i=2; i<=100; i++){
+      System.out.println( i + a + c + b );      
     } 
   }
 }//Carneirinho
